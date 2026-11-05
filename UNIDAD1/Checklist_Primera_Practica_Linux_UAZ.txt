@@ -1,0 +1,84 @@
+SISTEMA OPERATIVO LINUX · SESIÓN 01
+Universidad Autónoma de Zacatecas · Ingeniería de Software
+Docente: Dr. Alejandro Morgan
+
+PRIMERA PRÁCTICA: CONECTA, INSPECCIONA Y EXPLICA
+
+[x] Identificar distribución y kernel
+[x] Confirmar usuario, grupos y ruta
+[x] Examinar archivos y permisos
+[x] Observar proceso y servicio
+[x] Relacionar puerto y evidencia
+
+Evidencia mínima por actividad:
+1. Comando o acción
+2. Salida relevante
+3. Interpretación técnica
+4. Decisión o siguiente prueba
+
+Nombre: Bernardo Villagrana Rodriguez
+Fecha: 20 de Agosto del 2026
+
+1.1: cat /etc/os-release 
+PRETTY_NAME="Ubuntu 26.04"
+NAME= "Ubuntu"
+VERSION_ID="26.04"
+VERSION="26.04 (Resolute Raccoon)"
+VERSION_CODENAME=resolute
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www:ubuntu:com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=resolute
+LOGO=ubuntu-logo
+
+1.2: uname -r
+7.0.0-30-generic
+
+1.3: Esta parte muestra los datos del OS nada muy relevante a mi parecer aparte de la version
+
+2.1: whoami
+angelicalwww
+
+2.2: id
+uid=1000(angelicalwww) gid=1000(angelicalwww) grups=1000(angelicalwww),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),100(users),111(lpadmin),114(lxd)
+
+2.3: pwd
+/home/angelical
+
+2.4: Esta parte muestra datos mas especificos de la maquina virtual, el usuario datos del grupo y la ruta en el que esta guardado
+
+3.1: ls -la
+muestra las rutas disponibles, segun comprendo esto esta desde la parte principal asi que muestra practicamente todo, por lo mismo no adjunto todo ya que incluye un total de 80 rutas segun el comando
+
+3.2: stat
+el usar el comando asi en crudo genera una salida de error, pero entendo que el comando sirve para contar o mostrar distintos datos del almacenamiento
+
+3.3: son comandos creados para ver y modificar archivos o rutas
+
+4.1: ps
+PID TTY
+6032 pts/0
+9456 pts/0
+
+TIME CMD
+00:00:00 bash
+00:00:00 ps
+
+4.2 system status
+State:running
+Segun veo este muestra el estado del sistema como si esta realizando algo o tiene procesos fallidos
+
+4.3 segun entiendo estos muestran el estado del sistema y el como esta funcionando
+
+5.1: ss -ltnp 
+muestra los puertos activos y su estado
+
+5.2: journalctl
+muestra un listado de eventos del kernel
+
+5.3: Esta seccion es la veo como parte de lo que ocupamos cuando lo usemos como servidor o para conectarse a algo o que algo se conecte ya que te indica por donde es posible y si ocurrio algun fallo o error puedes ver exactamente cuando y que paso 
+
+
